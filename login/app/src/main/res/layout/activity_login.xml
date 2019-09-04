@@ -5,6 +5,8 @@
     android:background="@drawable/background2"
     android:fitsSystemWindows="true" >
 
+    <include layout="@layout/tool_bar"/>
+
     <RelativeLayout
         android:id="@+id/login_layout"
         android:layout_width="match_parent"
@@ -103,7 +105,7 @@
             android:text="登          录"
             android:textColor="#ffffff" />
         <Button
-            android:id="@+id/login_error"
+            android:id="@+id/register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignRight="@id/login_button"
@@ -113,7 +115,7 @@
             android:textColor="#ffffff"
             android:textSize="18sp" />
         <Button
-            android:id="@+id/register"
+            android:id="@+id/login_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/login_button"

@@ -5,6 +5,8 @@
     android:background="@drawable/background2"
     android:fitsSystemWindows="true" >
 
+
+    <include layout="@layout/tool_bar"/>
     <RelativeLayout
         android:id="@+id/login_layout"
         android:layout_width="match_parent"

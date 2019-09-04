@@ -29,14 +29,14 @@ public class SplashActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 //        3.跳转页面
-//        Timer timer = new Timer();
-//        TimerTask task = new TimerTask() {
-//            @Override
-//            public void run() {
-//                Intent intent = new Intent(SplashActivity.this,MainActivity.class);
-//                startActivity(intent);
-//            }
-//        };
-//        timer.schedule(task,5000);
+        Timer timer = new Timer();
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(SplashActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        };
+        timer.schedule(task,5000);
     }
 }
