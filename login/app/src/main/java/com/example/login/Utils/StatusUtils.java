@@ -1,27 +1,58 @@
 package com.example.login.Utils;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import android.app.Activity;
+import android.graphics.Color;
+import android.os.Build;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
-public class MD5Utils {
-    public static String md5(String param) {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("md5");
-            byte[] result = digest.digest(param.getBytes());
-            StringBuilder sb = new StringBuilder();
-            for (byte b : result) {
-                int number = b & 0xff;
-                String hex = Integer.toHexString(number);
-                if (hex.length() == 1) {
-                    sb.append("0").append(hex);
-                } else {
-                    sb.append(hex);
-                }
-            }
-            return sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-            return "";
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import com.example.login.loginActivity;
+import com.example.login.R;
+
+
+public class StatusUtils {
+    /**
+     * 设置沉浸式状态栏
+     * @param activity
+     */
+    public static void setImmersionMode(Activity activity) {
+        Window window = activity.getWindow();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
         }
+    }
+
+    /**
+     * 初始化工具栏
+     * @param activity
+     * @param titleName
+     */
+    public static void initToolbar(final AppCompatActivity activity, String titleName,
+                                   boolean isHomeUp, boolean isHome) {
+        Toolbar toolbar = activity.findViewById(R.id.title_toolbar);
+        toolbar.setTitle(titleName);
+        activity.setSupportActionBar(toolbar);
+
+        // 设置回退按钮，及点击事件
+        ActionBar actionBar = activity.getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(isHomeUp); // 设置返回键
+            actionBar.setHomeButtonEnabled(isHome);    // 设置是否是首页
+        }
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                activity.finish();
+            }
+        });
     }
 }

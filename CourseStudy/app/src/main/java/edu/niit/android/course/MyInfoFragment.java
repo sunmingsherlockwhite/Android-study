@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
-public class MyInfoFragment extends Fragment {
+public class  MyInfoFragment extends Fragment {
     private Context mContext;
     private TextView tvUsername;
     private LinearLayout headLayout;

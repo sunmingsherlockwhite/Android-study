@@ -1,9 +1,5 @@
 package com.example.login;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -13,95 +9,129 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.login.Utils.MD5Utils;
+import com.example.login.Utils.StatusUtils;
+
 
 public class loginActivity extends AppCompatActivity {
-    private Toolbar toolbar;
     private EditText etUsername, etPassword;
-    private Button buttonRegister, buttonLogin, buttonForget;
-    private TextView tUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        StatusUtils.setImmersionMode(this);
         setContentView(R.layout.activity_login);
 
-        initToolbar();
-        initView();
-        getUserName();
+        StatusUtils.initToolbar(this, "登录", true, false);  // 初始化toolbar
 
-        buttonLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String username = etUsername.getText().toString();
-                String password = etPassword.getText().toString();
-                //3.2 检查控件的有效性
-                SharedPreferences pref = getSharedPreferences("data", MODE_PRIVATE);
-                String name = pref.getString("username", "");
-                String pwd = pref.getString("password", "");
-                if (TextUtils.isEmpty(username)) {
-                    Toast.makeText(loginActivity.this, "用户名不能为空", Toast.LENGTH_SHORT).show();
-                } else if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(loginActivity.this, "密码不能为空", Toast.LENGTH_SHORT).show();
-                } else if (!username.equals(name)) {
-                    Toast.makeText(loginActivity.this, "用户名错误", Toast.LENGTH_SHORT).show();
-                } else if (!MD5Utils.md5(password).equals(pwd)) {
-                    Toast.makeText(loginActivity.this, "密码错误", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(loginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
-                    // 给bnt1添加点击响应事件
-                    Intent intent = new Intent(loginActivity.this, MainActivity.class);
-                    //启动
-                    startActivity(intent);
-                }
-            }
-        });
-
-        buttonRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // 给bnt1添加点击响应事件
-                Intent intent = new Intent(loginActivity.this, signinActivity.class);
-                //启动
-                startActivity(intent);
-            }
-        });
+        initView();  // 初始化界面控件
+        initData();  // 初始化传入的数据
     }
 
-    private void initToolbar() {
-        toolbar = findViewById(R.id.title_toolbar);
-        toolbar.setTitle("登录");
-        setSupportActionBar(toolbar);
-
-        ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null){
-            actionBar.setDisplayHomeAsUpEnabled(true);
+    private void initData() {
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+        if (!TextUtils.isEmpty(username)) {
+            etUsername.setText(username);
         }
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loginActivity.this.finish();
-            }
-        });
     }
 
     private void initView() {
-//        View view = View.inflate(this, (R.layout.activity_login), null);
         etUsername = findViewById(R.id.username_edit);
         etPassword = findViewById(R.id.userpassword_edit);
-        buttonRegister = findViewById(R.id.register);
-        buttonLogin = findViewById(R.id.login_button);
-        buttonForget = findViewById(R.id.login_error);
-        tUsername = findViewById(R.id.username_edit);
+
+        TextView tvRegister = findViewById(R.id.register);
+        tvRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(loginActivity.this, signinActivity.class);
+                startActivityForResult(intent, 1);
+            }
+        });
+
+        Button btnLogin = findViewById(R.id.login_button);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login();
+
+            }
+        });
     }
 
-    private void getUserName() {
-        Intent intent = getIntent();
-        String username_register = intent.getStringExtra("username_edit");
-        if (username_register == null || username_register == "") {
-            tUsername.setText("");
+    private void login() {
+        String username = etUsername.getText().toString();
+        String password = etPassword.getText().toString();
+        password = MD5Utils.md5(password);
+        String spPwd = readPwd(username);
+
+        if (TextUtils.isEmpty(username)) {
+            Toast.makeText(loginActivity.this, "用户名不能为空", Toast.LENGTH_SHORT).show();
+        } else if (TextUtils.isEmpty(password)) {
+            Toast.makeText(loginActivity.this, "密码不能为空", Toast.LENGTH_SHORT).show();
+        } else if (TextUtils.isEmpty(spPwd)) {
+            Toast.makeText(loginActivity.this, "请先注册", Toast.LENGTH_SHORT).show();
+        } else if (!spPwd.equals(password)) {
+            Toast.makeText(loginActivity.this, "输入的密码不正确", Toast.LENGTH_SHORT).show();
         } else {
-            tUsername.setText(username_register);
+            Toast.makeText(loginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
+            saveLoginStatus(username, true);
+
+            // 返回到我的界面
+            Intent intent = new Intent();
+            intent.putExtra("isLogin", true);
+            intent.putExtra("loginUser", username);
+            setResult(RESULT_OK, intent);
+            loginActivity.this.finish();
         }
     }
+
+    /**
+     * 保存登录的状态和用户名
+     * @param username
+     * @param isLogin
+     */
+    private void saveLoginStatus(String username, boolean isLogin) {
+        getSharedPreferences("userInfo", MODE_PRIVATE)
+                .edit()
+                .putString("loginUser", username)
+                .putBoolean("isLogin", isLogin)
+                .apply();
+    }
+
+    private String readPwd(String username) {
+        SharedPreferences sp = getSharedPreferences("userInfo", MODE_PRIVATE);
+        return sp.getString(username, "");
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode,
+                                    int resultCode,
+                                    @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1 && resultCode == RESULT_OK && data != null) {
+            String username = data.getStringExtra("username");
+            etUsername.setText(username);
+//                etUsername.setSelection(username.length());
+        }
+    }
+
+    //    @Override
+//    public void onWindowFocusChanged(boolean hasFocus) {
+//        super.onWindowFocusChanged(hasFocus);
+//        if (hasFocus && Build.VERSION.SDK_INT >= 19) {
+//            View decorView = getWindow().getDecorView();
+//            decorView.setSystemUiVisibility(
+//                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+//                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+//                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+//                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+//                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+//                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+//        }
+//    }
 }
