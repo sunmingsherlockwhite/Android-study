@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background2"
-    tools:context=".LoginActivity">
+    tools:context=".activity.LoginActivity">
 
     <include layout="@layout/tool_bar"/>
 
@@ -64,28 +64,28 @@
         android:layout_height="45sp"
         android:gravity="center"
         android:orientation="horizontal">
-        <TextView
-            android:id="@+id/register_now"
-            android:layout_width="wrap_content"
-            android:layout_height="40sp"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            android:text="立即注册"
-            android:clickable="true"
-            android:layout_marginRight="40sp"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/register_now"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="立即注册"
+        android:clickable="true"
+        android:layout_marginRight="40sp"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/forget_psw"
-            android:layout_width="wrap_content"
-            android:layout_height="40sp"
-            android:layout_gravity="center"
-            android:gravity="center_vertical"
-            android:text="找回密码?"
-            android:clickable="true"
-            android:textColor="@android:color/white"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/forget_psw"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="找回密码?"
+        android:clickable="true"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
     </LinearLayout>
 
 </LinearLayout>
