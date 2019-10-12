@@ -9,7 +9,11 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
+        android:name="edu.niit.android.course.MyApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -17,20 +21,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/NoActionBar" >
+        <activity android:name="edu.niit.android.course.activity.ChangeUserInfoActivity" />
         <activity android:name="edu.niit.android.course.activity.UserInfoActivity" />
-        <activity android:name="edu.niit.android.course.SettingActivity" />
-        <activity android:name="edu.niit.android.course.RegisterActivity" />
-        <activity android:name="edu.niit.android.course.LoginActivity" />
-        <activity android:name="edu.niit.android.course.SplashActivity" >
+        <activity android:name="edu.niit.android.course.activity.ModifyPwdActivity" />
+        <activity android:name="edu.niit.android.course.activity.FindPwdActivity" />
+        <activity android:name="edu.niit.android.course.activity.SettingActivity" />
+        <activity android:name="edu.niit.android.course.activity.RegisterActivity" />
+        <activity android:name="edu.niit.android.course.activity.LoginActivity" />
+        <activity android:name="edu.niit.android.course.activity.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="edu.niit.android.course.MainActivity" />
-        <activity android:name="edu.niit.android.course.MainViewPagerActivity" />
+        <activity android:name="edu.niit.android.course.activity.MainActivity" />
+        <activity android:name="edu.niit.android.course.activity.MainViewPagerActivity" />
     </application>
 
 </manifest>

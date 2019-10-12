@@ -16,7 +16,7 @@
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/iv_picture"
-            android:src="@drawable/picture_f"
+            android:src="@drawable/sunming"
             android:layout_marginTop="20sp"
             android:layout_gravity="center"
             android:layout_width="120sp"
@@ -28,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:background="@drawable/background2"
             android:text="点击登录"
             android:textSize="25sp"
             android:textColor="@android:color/white"

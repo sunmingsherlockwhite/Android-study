@@ -10,55 +10,74 @@
 9        android:targetSdkVersion="28" />
 9-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:5:5-25:19
-12        android:allowBackup="true"
-12-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/NoActionBar" >
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:6:22-77
+13
+14    <application
+14-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:8:5-32:19
+15        android:name="edu.niit.android.course.MyApplication"
+15-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:9:9-38
+16        android:allowBackup="true"
+16-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
 19-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:11:9-43
-20        <activity android:name="edu.niit.android.course.activity.UserInfoActivity" />
-20-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:12:9-72
-20-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:12:19-60
-21        <activity android:name="edu.niit.android.course.SettingActivity" />
-21-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:13:9-53
-21-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:13:19-50
-22        <activity android:name="edu.niit.android.course.RegisterActivity" />
-22-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:14:9-54
-22-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:14:19-51
-23        <activity android:name="edu.niit.android.course.LoginActivity" />
-23-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:15:9-51
-23-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:15:19-48
-24        <activity android:name="edu.niit.android.course.SplashActivity" >
-24-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:16:9-22:20
-24-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:16:19-49
-25            <intent-filter>
-25-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:17:13-21:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:17-69
-26-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:17-77
-28-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:27-74
-29            </intent-filter>
-30        </activity>
-31        <activity android:name="edu.niit.android.course.MainActivity" />
-31-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:9-50
-31-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:19-47
-32        <activity android:name="edu.niit.android.course.MainViewPagerActivity" />
-32-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:24:9-59
-32-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:24:19-56
-33    </application>
-34
-35</manifest>
+20        android:label="@string/app_name"
+20-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/NoActionBar" >
+24-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:15:9-43
+25        <activity android:name="edu.niit.android.course.activity.ChangeUserInfoActivity" />
+25-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:16:9-78
+25-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:16:19-66
+26        <activity android:name="edu.niit.android.course.activity.UserInfoActivity" />
+26-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:17:9-63
+26-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:17:19-60
+27        <activity android:name="edu.niit.android.course.activity.ModifyPwdActivity" />
+27-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:9-64
+27-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:19-61
+28        <activity android:name="edu.niit.android.course.activity.FindPwdActivity" />
+28-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:19:9-62
+28-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:19:19-59
+29        <activity android:name="edu.niit.android.course.activity.SettingActivity" />
+29-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:9-62
+29-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:19-59
+30        <activity android:name="edu.niit.android.course.activity.RegisterActivity" />
+30-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:21:9-63
+30-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:21:19-60
+31        <activity android:name="edu.niit.android.course.activity.LoginActivity" />
+31-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:22:9-60
+31-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:22:19-57
+32        <activity android:name="edu.niit.android.course.activity.SplashActivity" >
+32-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:9-29:20
+32-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:19-58
+33            <intent-filter>
+33-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:24:13-28:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:25:17-69
+34-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:25:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:27:17-77
+36-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:27:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity android:name="edu.niit.android.course.activity.MainActivity" />
+39-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:30:9-59
+39-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:30:19-56
+40        <activity android:name="edu.niit.android.course.activity.MainViewPagerActivity" />
+40-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:31:9-68
+40-->C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:31:19-65
+41    </application>
+42
+43</manifest>
