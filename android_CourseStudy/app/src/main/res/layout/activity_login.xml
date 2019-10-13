@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bgimage"
+    android:background="@drawable/background2"
     tools:context=".activity.LoginActivity">
 
     <include layout="@layout/tool_bar"/>
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/iv_picture"
-        android:src="@drawable/picture_f"
-        android:layout_marginTop="20sp"
+        android:src="@drawable/sunming"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="20sp"
         android:layout_gravity="center"
-        android:layout_width="120sp"
-        android:layout_height="120sp"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
         app:riv_oval="true"/>
 
     <EditText
