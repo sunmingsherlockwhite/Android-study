@@ -4,19 +4,17 @@ import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
-import edu.niit.android.course.fragment.ExerciseFragment;
-import edu.niit.android.course.fragment.MyInfoFragment;
 import edu.niit.android.course.R;
-import edu.niit.android.course.fragment.RecyclerViewFragment;
+import edu.niit.android.course.fragment.CourseFragment;
+import edu.niit.android.course.fragment.ExerciseRecyclerFragment;
+import edu.niit.android.course.fragment.MyInfoFragment;
 import edu.niit.android.course.utils.StatusUtils;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,13 +46,16 @@ public class MainActivity extends AppCompatActivity {
         fragments = new SparseArray<>();
         fragments.put(R.id.btn_my, MyInfoFragment.newInstance());
 //        fragments.put(R.id.btn_execise, ExerciseFragment.newInstance("Activity向Fragment传值"));
-        fragments.put(R.id.btn_execise, RecyclerViewFragment.newInstance("Activity向Fragment传值"));
+        fragments.put(R.id.btn_execise, ExerciseRecyclerFragment.newInstance("Activity向Fragment传值"));
+        fragments.put(R.id.btn_course, CourseFragment.newInstance());
+
         // 2. 加载默认的Fragment
-        replaceFragment(fragments.get(R.id.btn_my));
+        replaceFragment(fragments.get(R.id.btn_course));
     }
 
     /**
      * 管理fragment
+     *
      * @param fragment 加载的fragment对象
      */
     private void replaceFragment(Fragment fragment) {
@@ -70,13 +71,15 @@ public class MainActivity extends AppCompatActivity {
      */
     private void initTitles() {
         titles = new SparseArray<>();
-        titles.put(R.id.btn_course, "课程");
-        titles.put(R.id.btn_execise, "练习");
-        titles.put(R.id.btn_message, "资讯");
-        titles.put(R.id.btn_my, "我的");
+        titles.put(R.id.btn_course, "课程视频");
+        titles.put(R.id.btn_execise, "章节练习");
+        titles.put(R.id.btn_message, "最新资讯");
+        titles.put(R.id.btn_my, "我的信息");
     }
+
     /**
      * 根据按钮的id设置界面的标题
+     *
      * @param checkedId RadioGroup的选中Id
      */
     private void setToolbar(int checkedId) {

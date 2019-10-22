@@ -9,8 +9,9 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="28" />
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name="edu.niit.android.course.MyApplication"
@@ -23,6 +24,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/NoActionBar" >
+        <activity android:name="edu.niit.android.course.activity.CourseVideoActivity" />
+        <activity android:name="edu.niit.android.course.activity.ExerciseDetailActivity" />
         <activity android:name="edu.niit.android.course.activity.ChangeUserInfoActivity" />
         <activity android:name="edu.niit.android.course.activity.UserInfoActivity" />
         <activity android:name="edu.niit.android.course.activity.ModifyPwdActivity" />

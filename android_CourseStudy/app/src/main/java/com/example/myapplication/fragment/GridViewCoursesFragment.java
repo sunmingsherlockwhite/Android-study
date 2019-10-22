@@ -113,7 +113,7 @@ public class GridViewCoursesFragment extends Fragment implements ViewPager.OnPag
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Courses courses = (Courses) adapterView.getItemAtPosition(i);
                 //跳转到课程详情界面
-                Toast.makeText(getContext(),"点击了:"+courses.getTitle(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(),"点击了:"+courses.getTitle(),Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getContext(), CourseDetailActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("course",courses);
@@ -200,7 +200,7 @@ public class GridViewCoursesFragment extends Fragment implements ViewPager.OnPag
     private void loadCoursesByOkHttp(){
         // 1.创建一个Request对象，装载url,header等request头
         Request request = new Request.Builder()
-                .url("https://www.fastmock.site/mock/b46332ceba020b46458f016deac2c275/course/chapter")
+                .url("https://www.fastmock.site/mock/ac528fb68a2bc0e8d96b5f1fad863e6b/course/chapter")
                 .addHeader("Accept","application/json")
                 .method("GET",null)
                 .build();
@@ -240,7 +240,7 @@ public class GridViewCoursesFragment extends Fragment implements ViewPager.OnPag
         new Thread(new Runnable() {
             @Override
             public void run() {
-                String json = NetworkUtils.get("https://www.fastmock.site/mock/b46332ceba020b46458f016deac2c275/course/chapter");
+                String json = NetworkUtils.get("https://www.fastmock.site/mock/ac528fb68a2bc0e8d96b5f1fad863e6b/course/chapter");
                 List<Courses> courses = JSON.parseArray(json,Courses.class);
                 update(courses);
                 if (courses != null){

@@ -20,7 +20,7 @@
         android:paddingLeft="8dp"
         android:paddingRight="4dp"
         android:paddingTop="8dp"
-        android:src="@drawable/bgimage"/>
+        android:src="@drawable/bilibili"/>
      <TextView
          android:layout_width="match_parent"
          android:layout_height="wrap_content"

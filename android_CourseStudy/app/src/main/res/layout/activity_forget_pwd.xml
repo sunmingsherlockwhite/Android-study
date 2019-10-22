@@ -17,7 +17,7 @@
         android:text="你的用户名是:"
         android:layout_marginBottom="8sp"
         android:layout_marginTop="20sp"
-        android:textColor="#8a8a8a"
+        android:textColor="#ffffff"
         android:textSize="20sp"
         android:visibility="gone"/>
 
@@ -40,7 +40,7 @@
         android:text="你的姓名是:"
         android:layout_marginBottom="8sp"
         android:layout_marginTop="20sp"
-        android:textColor="#8a8a8a"
+        android:textColor="#ffffff"
         android:textSize="20sp" />
 
     <EditText
@@ -61,7 +61,7 @@
         android:id="@+id/confirm_btn"
         android:layout_width="300sp"
         android:layout_height="40sp"
-        android:background="#f3ad02"
+        android:background="#03A9F4"
         android:textSize="20sp"
         android:layout_gravity="center"
         android:textColor="@android:color/white"

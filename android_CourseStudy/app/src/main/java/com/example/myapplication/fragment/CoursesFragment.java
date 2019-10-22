@@ -1,6 +1,7 @@
 package com.example.myapplication.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -21,6 +22,7 @@ import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.example.myapplication.R;
+import com.example.myapplication.activity.CourseDetailActivity;
 import com.example.myapplication.adapter.AdViewPagerAdapter;
 import com.example.myapplication.adapter.CoursesRecylerAdapter;
 import com.example.myapplication.entity.AdImage;
@@ -100,7 +102,12 @@ public class CoursesFragment extends Fragment implements ViewPager.OnPageChangeL
             public void onItemClick(View view, int position) {
                Courses course = courses.get(position);
                //跳转到课程详情页面
-                Toast.makeText(getContext(),"点击了："+course.getTitle(),Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getContext(),"点击了："+course.getTitle(),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getContext(), CourseDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("course",course);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
     }
@@ -134,11 +141,11 @@ public class CoursesFragment extends Fragment implements ViewPager.OnPageChangeL
 
             ImageView iv = new ImageView(getContext());
             if ("banner_1".equals(adImage.getImg())){
-                iv.setBackgroundResource(R.drawable.bgimage);
+                iv.setBackgroundResource(R.drawable.bilibili);
             } else if ("banner_2".equals(adImage.getImg())){
-                iv.setBackgroundResource(R.drawable.bgimage);
+                iv.setBackgroundResource(R.drawable.bilibili2);
             } else if ("banner_3".equals(adImage.getImg())){
-                iv.setBackgroundResource(R.drawable.bgimage);
+                iv.setBackgroundResource(R.drawable.bilibili4);
             }
             imageViews.add(iv);
         }

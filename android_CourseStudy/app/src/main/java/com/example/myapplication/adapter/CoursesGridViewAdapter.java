@@ -27,21 +27,21 @@ public class CoursesGridViewAdapter extends BaseAdapter {
 
     private void setImgIds() {
         imgIds = new ArrayList<>();
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
-        imgIds.add(R.drawable.bgimage);
+        imgIds.add(R.drawable.bilibili);
+        imgIds.add(R.drawable.bilibili1);
+        imgIds.add(R.drawable.bilibili2);
+        imgIds.add(R.drawable.bilibili4);
+        imgIds.add(R.drawable.bilibili);
+        imgIds.add(R.drawable.bilibili1);
+        imgIds.add(R.drawable.bilibili2);
+        imgIds.add(R.drawable.bilibili4);
+        imgIds.add(R.drawable.bilibili);
+        imgIds.add(R.drawable.bilibili1);
+        imgIds.add(R.drawable.bilibili2);
+        imgIds.add(R.drawable.bilibili4);
+        imgIds.add(R.drawable.bilibili);
+        imgIds.add(R.drawable.bilibili1);
+        imgIds.add(R.drawable.bilibili2);
     }
 
     @Override

@@ -57,7 +57,7 @@
         android:id="@+id/save_btn"
         android:layout_width="300sp"
         android:layout_height="40sp"
-        android:background="#f3ad02"
+        android:background="#03A9F4"
         android:textSize="20sp"
         android:layout_gravity="center"
         android:textColor="@android:color/white"

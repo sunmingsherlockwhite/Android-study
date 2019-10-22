@@ -1,13 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\37ec02f661e3547c5499ecdfd9f3cd1f\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bbc51c53aec70aeae5178e82f15e817a\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\abc680e55824c418c024460e31034ed4\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -26,6 +28,7 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Admi
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\435f1166e6a428a0025d9cd273cb35a2\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9093771a98b01557e81860f4122d7892\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -37,105 +40,121 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Administrator\.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\420f294924962582b4c42c622af43461\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\66e997bde0b6ece28f7fd36f5f4a1584\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8787729f29cf7add1bc29c81caccddfd\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
-INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
+INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-34:12
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:2:11-69
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:5:5-80
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:5:22-78
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:6:5-79
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:6:5-80
 	android:name
 		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:6:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:8:5-32:19
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:9:5-35:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\8392647ca9531c13a8f0d6b7ad086e7e\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:10:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:16:9-43
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:9:9-38
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:10:9-38
+activity#edu.niit.android.course.activity.CourseVideoActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:17:9-75
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:17:19-63
+activity#edu.niit.android.course.activity.ExerciseDetailActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:9-69
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:19-66
 activity#edu.niit.android.course.activity.ChangeUserInfoActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:16:9-78
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:19:9-69
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:16:19-66
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:19:19-66
 activity#edu.niit.android.course.activity.UserInfoActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:17:9-63
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:9-63
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:17:19-60
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:19-60
 activity#edu.niit.android.course.activity.ModifyPwdActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:9-64
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:21:9-64
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:18:19-61
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:21:19-61
 activity#edu.niit.android.course.activity.FindPwdActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:19:9-62
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:22:9-62
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:19:19-59
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:22:19-59
 activity#edu.niit.android.course.activity.SettingActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:9-62
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:9-62
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:20:19-59
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:19-59
 activity#edu.niit.android.course.activity.RegisterActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:21:9-63
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:24:9-63
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:21:19-60
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:24:19-60
 activity#edu.niit.android.course.activity.LoginActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:22:9-60
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:25:9-60
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:22:19-57
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:25:19-57
 activity#edu.niit.android.course.activity.SplashActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:9-29:20
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:23:19-58
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:26:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:30:27-74
 activity#edu.niit.android.course.activity.MainActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:30:9-59
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:33:9-59
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:30:19-56
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:33:19-56
 activity#edu.niit.android.course.activity.MainViewPagerActivity
-ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:31:9-68
+ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:34:9-68
 	android:name
-		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:31:19-65
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml:34:19-65
 uses-sdk
 INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Administrator\AndroidStudioProjects\CourseStudy-master\app\src\main\AndroidManifest.xml
@@ -148,6 +167,10 @@ MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Administrator\.gr
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bbc51c53aec70aeae5178e82f15e817a\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\bbc51c53aec70aeae5178e82f15e817a\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\ccc4f60e4549c263b614feec2a027fa2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\5eab63e3e217f33e4882f2fa7cd985ff\glide-4.10.0\AndroidManifest.xml:6:5-8:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\add2bdb41de46d90e5d3bd4e75929820\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\dd07e922b5233b833d82ee834e6becf7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -184,6 +207,8 @@ MERGED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\tra
 MERGED from [androidx.core:core:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c527b78844be871c44103f6f45a963fb\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\aa91d8d2653c363bbd5da9d9892260d3\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\e90be152f08ce99fb09048a87e58bfc3\gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\c9c8616d74aa0ab3eb457d24b669c685\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\9d52be8c254a228a91eaf05f51d52923\documentfile-1.0.0\AndroidManifest.xml:20:5-44

@@ -27,8 +27,8 @@
             android:gravity="center_vertical"
             android:id="@+id/ll_selectA">
             <TextView
-                android:layout_width="55sp"
-                android:layout_height="55sp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
                 android:id="@+id/iv_A"
                 android:background="@mipmap/circle_solid"
                 android:text="A"
@@ -52,8 +52,8 @@
             android:gravity="center_vertical"
             android:id="@+id/ll_selectB">
             <TextView
-                android:layout_width="55sp"
-                android:layout_height="55sp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
                 android:background="@mipmap/circle_solid"
                 android:id="@+id/iv_B"
                 android:text="B"
@@ -77,8 +77,8 @@
             android:gravity="center_vertical"
             android:id="@+id/ll_selectC">
             <TextView
-                android:layout_width="55sp"
-                android:layout_height="55sp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
                 android:background="@mipmap/circle_solid"
                 android:text="C"
                 android:id="@+id/iv_C"
@@ -102,8 +102,8 @@
             android:gravity="center_vertical"
             android:id="@+id/ll_selectD">
             <TextView
-                android:layout_width="55sp"
-                android:layout_height="55sp"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
                 android:background="@mipmap/circle_solid"
                 android:text="D"
                 android:id="@+id/iv_D"

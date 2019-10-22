@@ -61,7 +61,7 @@ public class SettingActivity extends AppCompatActivity {
                 new AlertDialog.Builder(SettingActivity.this)
                         .setTitle("退出")
                         .setMessage("确认退出登录？")
-                        .setPositiveButton("确认", new DialogInterface.OnClickListener() {
+                        .setPositiveButton("确认",  new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 SharedUtils.clearLoginInfo(SettingActivity.this);

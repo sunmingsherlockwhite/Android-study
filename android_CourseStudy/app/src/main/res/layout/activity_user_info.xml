@@ -26,7 +26,7 @@
             android:layout_weight="1"
             android:text="头像"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:gravity="center_vertical"
             android:paddingLeft="35sp"/>
 
@@ -62,7 +62,7 @@
             android:layout_weight="1"
             android:text="用户名"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:gravity="center_vertical"
             android:paddingLeft="35sp"/>
         <TextView
@@ -73,7 +73,7 @@
             android:textSize="20sp"
             android:textColor="#8a8a8a"
             android:layout_marginRight="35sp"
-            android:text="aaa"/>
+            android:text="sunming"/>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -98,7 +98,7 @@
             android:layout_weight="1"
             android:text="昵称"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:gravity="center_vertical"
             android:paddingLeft="35sp"/>
 
@@ -110,7 +110,7 @@
             android:textSize="20sp"
             android:textColor="#8a8a8a"
             android:layout_marginRight="35sp"
-            android:text="bbb"/>
+            android:text="sunming"/>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
@@ -135,7 +135,7 @@
             android:layout_weight="1"
             android:text="性别"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:gravity="center_vertical"
             android:paddingLeft="35sp"/>
 
@@ -172,7 +172,7 @@
             android:layout_weight="1"
             android:text="签名"
             android:textColor="#000"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:gravity="center_vertical"
             android:paddingLeft="35sp"/>
 
@@ -184,7 +184,7 @@
             android:textSize="20sp"
             android:textColor="#8a8a8a"
             android:layout_marginRight="35sp"
-            android:text="aaa"/>
+            android:text="nice"/>
     </LinearLayout>
     <View
         android:layout_width="match_parent"
